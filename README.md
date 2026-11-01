@@ -68,7 +68,7 @@ The standalone Render app passed a real browser run: 20 FrancisBiz games importe
 
 ## Third-party notices
 
-Stockfish.js: GPLv3, https://github.com/nmrugg/stockfish.js/tree/v19.0.1 . Its unmodified lite single-thread JavaScript and WASM binaries are in `public/engine`; license is `public/engine/COPYING`; the corresponding exact release source archive is served alongside them as `stockfish-19.0.1-source.tar.gz`, including build instructions. Neural network reference: https://tests.stockfishchess.org/nns?network_name=nn-61e7af4bb97d . Browser-only Spline mode downloads the same pinned release from jsDelivr; the hosted standalone uses local copies.
+Stockfish.js: GPLv3, https://github.com/nmrugg/stockfish.js/tree/v19.0.1 . Its unmodified lite single-thread JavaScript and WASM binaries are in `public/engine`; license is `public/engine/COPYING`; the corresponding exact release source archive is served alongside them as `stockfish-19.0.1-source.tar.gz`, including build instructions. Neural network reference: https://tests.stockfishchess.org/nns?network_name=nn-61e7af4bb97d . The Spline overlay and hosted standalone both download the pinned engine from this Render site. The /engine/* responses include Access-Control-Allow-Origin: * so Spline’s sandboxed frame can fetch these public files. This avoids the external CDN download that returned HTTP 403.
 
 chess.js 1.4.0: BSD-2-Clause, https://github.com/jhlywa/chess.js/tree/v1.4.0 . Vendored ESM with license at `public/chess.js-LICENSE`.
 

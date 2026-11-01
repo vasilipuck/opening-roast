@@ -5,3 +5,7 @@ services:
     buildCommand: npm ci --ignore-scripts && npm run build
     staticPublishPath: ./dist
     autoDeployTrigger: off
+    headers:
+      - path: /engine/*
+        name: Access-Control-Allow-Origin
+        value: "*"
