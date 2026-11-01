@@ -1,0 +1,7 @@
+services:
+  - type: web
+    runtime: static
+    name: opening-roast
+    buildCommand: npm ci --ignore-scripts && npm run build
+    staticPublishPath: ./dist
+    autoDeployTrigger: off
