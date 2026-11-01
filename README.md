@@ -1,5 +1,7 @@
 # Opening Roast
 
+Live report app: https://opening-roast.onrender.com/
+
 Real Chess.com scouting reports for the existing Spline café. Defaults: opponent **FrancisBiz**, you **BlebJeb**.
 
 ## Run
@@ -56,7 +58,7 @@ A new brew imports public data again and shows retrieval time. Chess.com's API c
 
 The build was additionally checked against 100 real games for each supplied username and one full real game analyzed per account. `tests/FrancisBiz.json`, `tests/BlebJeb.json` and `tests/live-results.json` are local optional verification snapshots and are excluded from Git. They are not demo fallbacks. Without snapshots, the test still runs real Stockfish mate checks; fetch current public games for optional live-account validation.
 
-Browser rendering and the Spline iframe's network/worker policies still require an interactive Play-mode check. Node engine tests and DOM tests do not prove those policies. Browser and public deployment checks should be completed after hosting is connected.
+The standalone Render app passed a real browser run: 20 FrancisBiz games imported, 19 mode-qualified games fully analyzed (980 positions), with BlebJeb comparison, profile photo, full checkmate replay, legal engine alternatives, accuracy sorting and JSON download. Hosted engine assets were verified byte-for-byte with the local build. Render showed a Hobby workspace, no card on file, $0 current/projected charges and a $0 monthly build spend limit. The Spline iframe network/worker behavior and published café still need an independent Play-mode check; this deployment serves the report app, while the café remains in the Spline project.
 
 ## Third-party notices
 
