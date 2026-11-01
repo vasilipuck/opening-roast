@@ -19,6 +19,12 @@ Open http://localhost:4173. `dist/index.html` is the standalone report app. It h
 
 The current Spline editor can run the overlay immediately. Publishing that scene later preserves the same HTML in Spline runtime exports. For a self-hosted full café, obtain the scene's published runtime URL and embed it; no scene URL was fabricated in this package. The standalone Render deployment remains useful without that export.
 
+## Café homepage connection
+
+Set the Render build environment variable `SPLINE_CAFE_URL` to the actual HTTPS public URL returned by Spline's **Export → Public URL** panel, then trigger a deploy. The build makes that café the full-screen homepage, preserving its START → input → real analysis → mug → diagnostic flow. `/report.html` remains available through a small “Report only” link. An editor URL is rejected; no placeholder URL is published.
+
+Without this variable, the existing working report form stays at `/`. The café itself is saved with its live-data overlay in Spline file `7afa1d64-23f9-491b-b91a-765845460f28`. The automatic Spline public export failed with an internal error, and the cloud browser cannot open the editor because it lacks WebGL. A public URL is still needed before the café homepage can be activated and verified.
+
 ## Hosting and budget
 
 Use a **Render Static Site**, with the repository root as root directory:
