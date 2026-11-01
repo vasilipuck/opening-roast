@@ -11,7 +11,7 @@ export async function run({user,own,count=100,manual=null,onProgress=()=>{},engi
  let ownImport=null,ownWarning='';
  if(own){try{ownImport=own.toLowerCase()===user.toLowerCase()?imported:await core.importPlayer(own,count,{signal,onProgress});}catch(error){if(error.name==='AbortError')throw error;ownWarning='Your games could not be loaded: '+error.message;}}
  onProgress({stage:'engine',games:games.length});
- const localEngine=await browserEngine(engineBase||'https://cdn.jsdelivr.net/npm/stockfish@19.0.1/bin/');
+ const localEngine=await browserEngine(engineBase||'https://opening-roast.onrender.com/engine/');
  if(signal.aborted){localEngine.close();throw new DOMException('Cancelled','AbortError');}engine=localEngine;
  try{await analyzeGames(games,localEngine,{signal,onProgress:p=>onProgress({...p,stage:'analysis'})});}
  finally{localEngine.close();if(engine===localEngine)engine=null;}
