@@ -1,0 +1,14 @@
+Stockfish.js 19.0.1 lite single-thread — GPLv3
+License: engine/COPYING
+Corresponding source: engine/stockfish-19.0.1-source.tar.gz
+Upstream: https://github.com/nmrugg/stockfish.js/tree/v19.0.1
+Build instructions are included in the source archive.
+Network: https://tests.stockfishchess.org/nns?network_name=nn-61e7af4bb97d
+
+chess.js 1.4.0 — BSD-2-Clause — chess.js-LICENSE
+https://github.com/jhlywa/chess.js/tree/v1.4.0
+
+Lichess chess-openings snapshot 2026-11-01 — CC0 — openings-COPYING
+https://github.com/lichess-org/chess-openings
+
+Chess.com public API data and avatars remain their owners' content.
